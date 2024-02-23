@@ -1,4 +1,8 @@
 
+import java.util.ArrayList;
+import java.util.List;
+
+
 
 /**
  *
@@ -9,11 +13,21 @@ public class Conductor {
     private String driverName;
     private int driverIdentification;
     private int driverAge;
+    private List<Vehiculo> vehiculos;
        
-    public void CrearConductor(String nombre, int cedula, int edad){
-        
-        System.out.println("H");
-        
+ public Conductor(String nombre, int cedula, int edad) {
+        this.driverName = nombre;
+        this.driverIdentification = cedula;
+        this.driverAge = edad;
+        this.vehiculos = new ArrayList<>();
+    }
+
+    public void agregarVehiculo(Vehiculo vehiculo) {
+        vehiculos.add(vehiculo);
+    }
+
+    public List<Vehiculo> getVehiculos() {
+        return vehiculos;
     }
     
     
