@@ -52,7 +52,7 @@ public class RegitroConductores {
     Conductor conductor = new Conductor(nombre, cedula, edad);
     conductores.put(cedula, conductor);
 
-    System.out.println("Conductor registrado exitosamente: " + conductor);
+    System.out.println("Conductor registrado exitosamente: ");
 }
 
     private static void asignarVehiculoAConductor(Scanner scanner) {
